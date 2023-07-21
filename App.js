@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import MapView, {Marker} from "react-native-maps";
 import {StyleSheet, View} from "react-native";
+import * as Location from "expo-location";
 
 import Parse from "parse/react-native.js";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -19,6 +20,7 @@ const initialRegion = {
 export default function App() {
 
   const [places, setPlaces] = useState([]);
+  const [location, setLocation] = useState(null);
 
   useEffect(() => {
     const Place = Parse.Object.extend("Place");
@@ -40,6 +42,16 @@ export default function App() {
       .catch((error) => {
         console.error("Error retrieving places: ", error);
       });
+    (async () => {
+      let {status} = await Location.requestForegroundPermissionsAsync();
+      if (status !== "granted") {
+        console.error("Permission to access location was denied.");
+        return;
+      }
+      let location = await Location.getCurrentPositionAsync({});
+      setLocation(location);
+      console.log(location);
+    })();
   }, []);
 
   return (
@@ -56,6 +68,16 @@ export default function App() {
             coordinate={place.coordinate}
           />
         ))}
+        {location && (
+          <Marker
+            title="You are here"
+            coordinate={{
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
+            }}
+            pinColor="blue"
+          />
+        )}
       </MapView>
     </View>
   );
