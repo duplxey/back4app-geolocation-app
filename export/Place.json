@@ -1,0 +1,65 @@
+{
+"results" : [
+
+  {
+    "objectId": "LwO9RQ2XQj",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 45.4679,
+      "longitude": -116.7822
+    },
+    "name": "Idaho",
+    "createdAt": "2023-07-21T13:51:28.456Z",
+    "updatedAt": "2023-07-26T20:41:24.838Z",
+    "description": "Mountainous and scenic."
+  },
+  {
+    "objectId": "Z9hamsJ61Q",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 34.1443,
+      "longitude": -114.5706
+    },
+    "name": "Arizona",
+    "createdAt": "2023-07-21T13:52:19.370Z",
+    "updatedAt": "2023-07-26T20:41:22.251Z",
+    "description": "Desert landscapes and cacti."
+  },
+  {
+    "objectId": "TnpeW1HmSF",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 35.2848,
+      "longitude": -101.3565
+    },
+    "name": "Oklahoma",
+    "createdAt": "2023-07-21T13:53:22.583Z",
+    "updatedAt": "2023-07-26T20:41:19.521Z",
+    "description": "Friendly and plains."
+  },
+  {
+    "objectId": "Yivxi5wXCf",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 42.7199,
+      "longitude": -78.4092
+    },
+    "name": "New York",
+    "createdAt": "2023-07-21T13:54:18.550Z",
+    "updatedAt": "2023-07-26T20:41:18.507Z",
+    "description": "Busy and cosmopolitan."
+  },
+  {
+    "objectId": "R7tEBufutO",
+    "location": {
+      "__type": "GeoPoint",
+      "latitude": 27.5041,
+      "longitude": -89.0941
+    },
+    "name": "Florida",
+    "createdAt": "2023-07-21T13:55:09.048Z",
+    "updatedAt": "2023-07-26T20:41:12.663Z",
+    "description": "Sunny and beachy."
+  }
+]
+}
