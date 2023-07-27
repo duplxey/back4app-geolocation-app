@@ -1,4 +1,4 @@
-# back4app-social-network
+# back4app-geolocation-app
 
 This repository demonstrates how to build a geolocation app with [Back4app](https://www.back4app.com/) and [React Native](https://reactnative.dev/)/[Expo](https://expo.dev/).
 
