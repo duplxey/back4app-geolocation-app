@@ -2,7 +2,7 @@
 
 This repository demonstrates how to build a geolocation app with [Back4app](https://www.back4app.com/) and [React Native](https://reactnative.dev/)/[Expo](https://expo.dev/).
 
-To learn more check out the [article](#).
+To learn more check out the [article](https://blog.back4app.com/how-to-make-a-geolocation-app/).
 
 ## Development (frontend)
 
